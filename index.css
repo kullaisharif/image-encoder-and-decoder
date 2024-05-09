@@ -1,0 +1,102 @@
+.bg-container {
+    background-image: url('https://www.cloud4c.com/vn/sites/vn/files/styles/thumbnail_for_facebook/public/2022-08/Cybersecurity-strategy-services-cloud4c-webpage-1.jpg?itok=Ux6g7Fqc');
+    background-size: cover;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heading {
+    color: white;
+    font-family: "Italian";
+    font-size: 60px;
+    text-align: left;
+    margin: 15px;
+}
+
+.para {
+    color: white;
+    font-family: "Italian";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    margin: 10px;
+}
+
+.button {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 400;
+    height: 35px;
+    width: 120px;
+    margin: 10px;
+    text-align: center;
+}
+
+.encrypt-section-container {
+    background-color: #3c3654;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-heading {
+    color: #F7F7F7;
+    font-family: "Roboto";
+    font-size: 50px;
+}
+
+.section-para {
+    color: #F7F7F7;
+    font-family: "Roboto";
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+}
+
+.input-container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.input-element {
+    margin: 20px;
+}
+
+label {
+    color: #F7F7F7;
+    font-family: "Roboto";
+    margin: 10px;
+}
+
+img{
+    height: 80px;
+    width: 130px;
+}
+
+.final-container{
+    background-color: #3c3654;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encrypted-text{
+    display: none;
+}
+
+.mail-container{
+    display: flex;
+    flex-direction: row;
+}
