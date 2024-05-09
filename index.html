@@ -1,0 +1,127 @@
+<html>
+
+<head> 
+  <meta charset="UTF-8" />
+  <title>project</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="Ie-edge" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q="
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="index.css"/>
+  <script src="steganography.min.js"></script>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div id="HomeSection" class="bg-container">
+        <h1 class="heading">StealthShield: Invisible Safeguards <br />for Your Data</h1>
+        <p class="para">Explore CipherGuard, a nexus of encryption and steganography crafting a covert shield for your data. <br />Here, concealment meets protection, forging a secure haven where information becomes<br /> an enigma hidden in plain sight. Step into a realm where privacy is an art, and security is seamlessly<br /> woven into every digital interaction.</p>
+        <div>
+            <a href="#EncryptSection">
+                <button class="button">TRY ENCRYPT</button>
+            </a>
+            <a href="#DecryptSection">
+                <button class="button">TRY DECRYPT</button>
+            </a>
+        </div>
+
+    </div>
+    <div id="EncryptSection">
+        <div class="encrypt-section-container">
+            <h1 class="section-heading">Welcome User</h1>
+            <p class="section-para">We understand the importance of trust in online interactions. That's why we've implemented a multi-layered security framework to guarantee that your data is handled with the utmost care, providing you with a secure and reliable experience.</p>
+            <div class="input-container">
+                <div class="input-element">
+                    <label for="image" class="label-style">Choose the image</label>
+                    <input
+                    class=""
+                    type="file"
+                    name="pic"
+                    accept="image/*"
+                    onchange="readURL(this);"
+                  />
+                    <img id="image1" src="" alt="your image" />
+                </div>
+                <div class="input-element">
+                    <label for="message" class="label-style">Enter Secret Message</label>
+                    <input type="text" id="message" class="input-style" />
+                </div>
+                <div class="mail-container">
+                    <div class="input-element">
+                        <label for="key" class="label-style">Enter Secret Key</label>
+                        <input type="text" id="key" class="input-style" placeholder="Enter number"/>
+                    </div>
+                    <button onclick="hideText()" class="button">ENCRYPT</button>
+                </div>
+                <div class="mail-container">
+                    <p class="section-para">Generated Encrypted Image -> </p>
+                    <img class="encrypted-image" id="image2" src="" alt=""/>
+                </div>
+                <p class="section-para">**UPCOMING FEATURE**</p>
+                <div class="mail-container">
+                    <div class="input-element">
+                        <label for="mail" class="label-style">Enter Destination Mail Address</label>
+                        <input type="text" id="mail" class="input-style" />
+                    </div>
+                    <button type="submit" onclick="sendEmail()" class="button">SEND MAIL</button>
+                </div>
+                
+                
+                <a href="#HomeSection">
+                    <button class="button">Back</button>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+      <div id="DecryptSection">
+        <div class="encrypt-section-container">
+            <h1 class="section-heading">Welcome User</h1>
+            <p class="section-para">We understand the importance of trust in online interactions. That's why we've implemented a multi-layered security framework to guarantee that your data is handled with the utmost care, providing you with a secure and reliable experience.</p>
+            <div class="input-container">
+                
+                <div class="input-element">
+                    <input class="" type="file" name="pic" accept="image/*" onchange="readURL2(this);" />
+                    <img class = "opa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                    <img id="image3" src="" alt="image3" />
+                </div>
+                <h1 id="ciphertext"></h1>
+                
+                <a href="#finalMessage">
+                    <button class="button">DECRYPT</button>
+                </a>
+                <a href="#HomeSection">
+                    <button class="button">Back</button>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <div id="finalMessage">
+        <div class="final-container">
+            <h1 class="section-heading">Get your Secret Message by entering secret key</h1>
+            <div class="input-element">
+                <label for="key" class="label-style">Enter Secret Key</label>
+                <input type="text" id="keydec" class="input-style" placeholder="Enter number" />
+            </div>
+            <div>
+                <button onclick="revealText()" class="button">Enter</button>
+            </div>
+            <h5>Hidden Text:</h5>
+                <h2 id="decoded"></h2>
+            <a href="#DecryptSection">
+                <button class="button">Back</button>
+            </a>
+            
+        </div>
+      </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+</html>
